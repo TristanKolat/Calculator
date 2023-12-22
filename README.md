@@ -4,7 +4,7 @@ Utilizes various patterns to implement basic calculations for "+, -, *, /, %" op
 
 ## Overview
 
-This repository contains the implementation of a custom calculator leveraging unique array and stack structures. It incorporates composite, command, and abstract command factory patterns, enabling a robust and extendable calculator application.
+This repository contains the implementation of a custom calculator leveraging unique array and stack structures. It incorporates command and abstract command factory patterns, enabling a robust and extendable calculator application.
 
 ## Features
 
@@ -16,7 +16,7 @@ This repository contains the implementation of a custom calculator leveraging un
 The Stack class acts as a facade, providing a simplified interface (push, pop, top, is_empty, etc.) to the underlying Array class, which manages the actual storage of elements. This encapsulation allows the Stack to expose only relevant stack operations and hide the complexity of array management.
 
 ### Templates
-In the Stack and Array classes, C++ templates are used to enable handling of various data types, ensuring both versatility and type safety.
+In the InfixtoPostfix, Stack and Array classes, C++ templates are used to enable handling of various data types, ensuring both versatility and type safety.
 
 ### Command
 The Command Pattern is implemented to encapsulate mathematical operations as objects, enhancing the calculator's versatility and extensibility. The current implementation supports addition, subtraction, division, multiplication, and modulus operations, along with open and closed parenthesis commands for managing operator precedence. This design allows for the easy integration of new operations, ensuring that extending functionality is straightforward and does not impact existing code. The pattern also ensures a consistent interface across different commands and handles the complexities of operation precedence, making the system robust and maintainable. This approach exemplifies a forward-thinking design that facilitates future growth and modifications of the software's capabilities.
