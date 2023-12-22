@@ -2,8 +2,8 @@
 #define _ARRAY_ITERATOR_H_
 
 
-#include "Expr_Iterator.h"
-#include "Array/Array.h"
+#include "../Interface/Expr_Iterator.h"
+#include "../../Array/Array.h"
 
 /**
  * @class Array_Iterator

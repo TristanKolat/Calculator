@@ -36,9 +36,9 @@ project (calculator) {
     Stack/Stack.h
     Stack/Stack.inl
 
-    Exp_Iterator.h
-    Array_Iterator.h
-    Array_Iterator.inl
+    Iterator/Interface/Exp_Iterator.h
+    Iterator/Array/Array_Iterator.h
+    Iterator/Array/Array_Iterator.inl
 
     Infix_To_Postfix.h
     
