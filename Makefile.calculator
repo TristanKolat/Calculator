@@ -32,9 +32,9 @@ LIBPREFIX     = lib
 LIBSUFFIX     = 
 GENFLAGS      = -O
 LDLIBS        = -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
-OBJS          = driver$(OBJEXT) Commands/Addition/Add_Command$(OBJEXT) Commands/Division/Div_Command$(OBJEXT) Commands/Multiplication/Mult_Command$(OBJEXT) Commands/Number/Num_Command$(OBJEXT) Commands/Subtraction/Sub_Command$(OBJEXT) Commands/Modulus/Mod_Command$(OBJEXT) Commands/Open_Parenthesis/Open_Paren_Command$(OBJEXT) Commands/Close_Parenthesis/Close_Paren_Command$(OBJEXT) Stack_Expr_Command_Factory$(OBJEXT)
+OBJS          = driver$(OBJEXT) Commands/Addition/Add_Command$(OBJEXT) Commands/Division/Div_Command$(OBJEXT) Commands/Multiplication/Mult_Command$(OBJEXT) Commands/Number/Num_Command$(OBJEXT) Commands/Subtraction/Sub_Command$(OBJEXT) Commands/Modulus/Mod_Command$(OBJEXT) Commands/Open_Parenthesis/Open_Paren_Command$(OBJEXT) Commands/Close_Parenthesis/Close_Paren_Command$(OBJEXT) Factory/Stack/Stack_Expr_Command_Factory$(OBJEXT)
 SOEXT         = .so
-SRC           = driver.cpp Commands/Addition/Add_Command.cpp Commands/Division/Div_Command.cpp Commands/Multiplication/Mult_Command.cpp Commands/Number/Num_Command.cpp Commands/Subtraction/Sub_Command.cpp Commands/Modulus/Mod_Command.cpp Commands/Open_Parenthesis/Open_Paren_Command.cpp Commands/Close_Parenthesis/Close_Paren_Command.cpp Stack_Expr_Command_Factory.cpp
+SRC           = driver.cpp Commands/Addition/Add_Command.cpp Commands/Division/Div_Command.cpp Commands/Multiplication/Mult_Command.cpp Commands/Number/Num_Command.cpp Commands/Subtraction/Sub_Command.cpp Commands/Modulus/Mod_Command.cpp Commands/Open_Parenthesis/Open_Paren_Command.cpp Commands/Close_Parenthesis/Close_Paren_Command.cpp Factory/Stack/Stack_Expr_Command_Factory.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 EXPORTFLAGS   = 
 DEPLIBS       = $(foreach lib, , $(foreach libpath, ., $(wildcard $(libpath)/lib$(lib).a)))
@@ -79,8 +79,8 @@ Commands/Open_Parenthesis/Open_Paren_Command$(OBJEXT): Commands/Open_Parenthesis
 Commands/Close_Parenthesis/Close_Paren_Command$(OBJEXT): Commands/Close_Parenthesis/Close_Paren_Command.cpp
 	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Close_Parenthesis/Close_Paren_Command.cpp
 
-Stack_Expr_Command_Factory$(OBJEXT): Stack_Expr_Command_Factory.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Stack_Expr_Command_Factory.cpp
+Factory/Stack/Stack_Expr_Command_Factory$(OBJEXT): Factory/Stack/Stack_Expr_Command_Factory.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Factory/Stack/Stack_Expr_Command_Factory.cpp
 
 clean:
 	-$(RM) $(OBJS)

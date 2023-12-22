@@ -20,7 +20,7 @@ project (calculator) {
     Commands/Open_Parenthesis/Open_Paren_Command.cpp
     Commands/Close_Parenthesis/Close_Paren_Command.cpp
 
-    Stack_Expr_Command_Factory.cpp      
+    Factory/Stack/Stack_Expr_Command_Factory.cpp      
   }
 
   Template_Files {
@@ -44,9 +44,9 @@ project (calculator) {
 
     Infix_To_Postfix.h
     
-    Expr_Command_Factory.h
-    Stack_Expr_Command_Factory.h
-    
+    Factory/Interface/Expr_Command_Factory.h
+    Factory/Stack/Stack_Expr_Command_Factory.h
+
     Commands/Interface/Expr_Command.h
     Commands/Addition/Add_Command.h
     Commands/Division/Div_Command.h

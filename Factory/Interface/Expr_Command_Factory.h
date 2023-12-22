@@ -1,15 +1,15 @@
 #ifndef _EXPR_COMMAND_FACTORY_H_
 #define _EXPR_COMMAND_FACTORY_H_
 
-#include "Commands/Interface/Expr_Command.h"
-#include "Commands/Addition/Add_Command.h"
-#include "Commands/Subtraction/Sub_Command.h"
-#include "Commands/Multiplication/Mult_Command.h"
-#include "Commands/Division/Div_Command.h"
-#include "Commands/Modulus/Mod_Command.h"
-#include "Commands/Number/Num_Command.h"
-#include "Commands/Open_Parenthesis/Open_Paren_Command.h"
-#include "Commands/Close_Parenthesis/Close_Paren_Command.h"
+#include "../../Commands/Interface/Expr_Command.h"
+#include "../../Commands/Addition/Add_Command.h"
+#include "../../Commands/Subtraction/Sub_Command.h"
+#include "../../Commands/Multiplication/Mult_Command.h"
+#include "../../Commands/Division/Div_Command.h"
+#include "../../Commands/Modulus/Mod_Command.h"
+#include "../../Commands/Number/Num_Command.h"
+#include "../../Commands/Open_Parenthesis/Open_Paren_Command.h"
+#include "../../Commands/Close_Parenthesis/Close_Paren_Command.h"
 
 // Abstract factory interface for creating command objects.
 class Expr_Command_Factory {

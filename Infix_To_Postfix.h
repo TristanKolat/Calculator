@@ -30,7 +30,7 @@
 #include "Array/Array.h"
 #include "Stack/Stack.h"
 #include "Iterator/Array/Array_Iterator.h"
-#include "Stack_Expr_Command_Factory.h"
+#include "Factory/Stack/Stack_Expr_Command_Factory.h"
 #include "Commands/Interface/Expr_Command.h"
 
 /**

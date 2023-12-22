@@ -1,8 +1,8 @@
 #ifndef _STACK_EXPR_COMMAND_FACTORY_H_
 #define _STACK_EXPR_COMMAND_FACTORY_H_
 
-#include "Expr_Command_Factory.h"
-#include "Stack/Stack.h"
+#include "../Interface/Expr_Command_Factory.h"
+#include "../../Stack/Stack.h"
 #include <string>
 #include <sstream>
 

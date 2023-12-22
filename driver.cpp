@@ -2,7 +2,7 @@
 #include "Stack/Stack.h"
 #include "Iterator/Array/Array_Iterator.h"
 #include "Infix_To_Postfix.h"
-#include "Stack_Expr_Command_Factory.h"
+#include "Factory/Stack/Stack_Expr_Command_Factory.h"
 #include <iostream>
 #include <string>
 
