@@ -22,16 +22,16 @@ project (calculator) {
   }
 
   Template_Files {
-    Array_Base.cpp
-    Array.cpp
+    Array/Base/Array_Base.cpp
+    Array/Array.cpp
     Stack.cpp
     Infix_To_Postfix.cpp 
   }
 
   Header_Files {
-    Array_Base.h
-    Array_Base.inl
-    Array.h
+    Array/Base/Array_Base.h
+    Array/Base/Array_Base.inl
+    Array/Array.h
 
     Stack.h
     Stack.inl

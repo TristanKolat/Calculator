@@ -11,7 +11,7 @@
 #ifndef _ARRAY_H_
 #define _ARRAY_H_
 
-#include "Array_Base.h"      // Array base class header for inheritance
+#include "Base/Array_Base.h"      // Array base class header for inheritance
 #include <cstring>          // for size_t definition
 
 // Forward declaration of the Array_Iterator template class

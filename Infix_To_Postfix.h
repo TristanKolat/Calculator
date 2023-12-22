@@ -27,7 +27,7 @@
 #ifndef _INFIX_TO_POSTFIX_H_
 #define _INFIX_TO_POSTFIX_H_
 
-#include "Array.h"
+#include "Array/Array.h"
 #include "Stack.h"
 #include "Array_Iterator.h"
 #include "Stack_Expr_Command_Factory.h"

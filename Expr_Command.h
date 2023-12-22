@@ -9,7 +9,7 @@
 #define _EXPR_COMMAND_H_
 
 #include "Stack.h"
-#include "Array.h"
+#include "Array/Array.h"
 
 class Expr_Command {
     public:

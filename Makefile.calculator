@@ -84,7 +84,6 @@ Stack_Expr_Command_Factory$(OBJEXT): Stack_Expr_Command_Factory.cpp
 
 clean:
 	-$(RM) $(OBJS)
-	-$(RM) $(*.o)
 
 realclean: clean
 	-$(RM) $(BIN)
