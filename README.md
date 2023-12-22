@@ -35,12 +35,12 @@ The project utilizes the Abstract Factory Pattern to facilitate the conversion o
 
 1. Make sure `Makefile` and `Makefile.calculator` are present in the root of the repository.
 2. Compile the calculator using:
-   make
+make
 
 ### Running the Calculator
 
 1. To start the calculator, use:
-   ./calculator
+./calculator
 
 When inputting commands, add spaces between tokens. Example:
    5+4
