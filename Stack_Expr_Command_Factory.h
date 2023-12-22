@@ -2,7 +2,7 @@
 #define _STACK_EXPR_COMMAND_FACTORY_H_
 
 #include "Expr_Command_Factory.h"
-#include "Stack.h"
+#include "Stack/Stack.h"
 #include <string>
 #include <sstream>
 

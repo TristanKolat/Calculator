@@ -4,7 +4,7 @@
 #define _CS507_STACK_H_
 
 #include <exception>
-#include "Array/Array.h"
+#include "../Array/Array.h"
 #include <stdexcept>
 
 /**

@@ -24,7 +24,7 @@ project (calculator) {
   Template_Files {
     Array/Base/Array_Base.cpp
     Array/Array.cpp
-    Stack.cpp
+    Stack/Stack.cpp
     Infix_To_Postfix.cpp 
   }
 
@@ -33,8 +33,8 @@ project (calculator) {
     Array/Base/Array_Base.inl
     Array/Array.h
 
-    Stack.h
-    Stack.inl
+    Stack/Stack.h
+    Stack/Stack.inl
 
     Exp_Iterator.h
     Array_Iterator.h
