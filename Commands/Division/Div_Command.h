@@ -7,7 +7,7 @@
 #ifndef _DIV_COMMAND_H_
 #define _DIV_COMMAND_H_
 
-#include "Expr_Command.h"
+#include "../Interface/Expr_Command.h"
 
 class Div_Command : public Expr_Command {
     public:

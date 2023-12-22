@@ -32,9 +32,9 @@ LIBPREFIX     = lib
 LIBSUFFIX     = 
 GENFLAGS      = -O
 LDLIBS        = -ldl $(subst lib,-l,$(sort $(basename $(notdir $(wildcard /usr/lib/librt.so /lib/librt.so))))) -lpthread
-OBJS          = driver$(OBJEXT) Add_Command$(OBJEXT) Div_Command$(OBJEXT) Mult_Command$(OBJEXT) Num_Command$(OBJEXT) Sub_Command$(OBJEXT) Mod_Command$(OBJEXT) Open_Paren_Command$(OBJEXT) Close_Paren_Command$(OBJEXT) Stack_Expr_Command_Factory$(OBJEXT)
+OBJS          = driver$(OBJEXT) Commands/Addition/Add_Command$(OBJEXT) Commands/Division/Div_Command$(OBJEXT) Commands/Multiplication/Mult_Command$(OBJEXT) Commands/Number/Num_Command$(OBJEXT) Commands/Subtraction/Sub_Command$(OBJEXT) Commands/Modulus/Mod_Command$(OBJEXT) Commands/Open_Parenthesis/Open_Paren_Command$(OBJEXT) Commands/Close_Parenthesis/Close_Paren_Command$(OBJEXT) Stack_Expr_Command_Factory$(OBJEXT)
 SOEXT         = .so
-SRC           = driver.cpp Add_Command.cpp Div_Command.cpp Mult_Command.cpp Num_Command.cpp Sub_Command.cpp Mod_Command.cpp Open_Paren_Command.cpp Close_Paren_Command.cpp Stack_Expr_Command_Factory.cpp
+SRC           = driver.cpp Commands/Addition/Add_Command.cpp Commands/Division/Div_Command.cpp Commands/Multiplication/Mult_Command.cpp Commands/Number/Num_Command.cpp Commands/Subtraction/Sub_Command.cpp Commands/Modulus/Mod_Command.cpp Commands/Open_Parenthesis/Open_Paren_Command.cpp Commands/Close_Parenthesis/Close_Paren_Command.cpp Stack_Expr_Command_Factory.cpp
 LINK.cc       = $(LD) $(LDFLAGS)
 EXPORTFLAGS   = 
 DEPLIBS       = $(foreach lib, , $(foreach libpath, ., $(wildcard $(libpath)/lib$(lib).a)))
@@ -55,29 +55,29 @@ generated: $(GENERATED_DIRTY)
 driver$(OBJEXT): driver.cpp
 	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) driver.cpp
 
-Add_Command$(OBJEXT): Add_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Add_Command.cpp
+Commands/Addition/Add_Command$(OBJEXT): Commands/Addition/Add_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Addition/Add_Command.cpp
 
-Div_Command$(OBJEXT): Div_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Div_Command.cpp
+Commands/Division/Div_Command$(OBJEXT): Commands/Division/Div_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Division/Div_Command.cpp
 
-Mult_Command$(OBJEXT): Mult_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Mult_Command.cpp
+Commands/Multiplication/Mult_Command$(OBJEXT): Commands/Multiplication/Mult_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Multiplication/Mult_Command.cpp
 
-Num_Command$(OBJEXT): Num_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Num_Command.cpp
+Commands/Number/Num_Command$(OBJEXT): Commands/Number/Num_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Number/Num_Command.cpp
 
-Sub_Command$(OBJEXT): Sub_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Sub_Command.cpp
+Commands/Subtraction/Sub_Command$(OBJEXT): Commands/Subtraction/Sub_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Subtraction/Sub_Command.cpp
 
-Mod_Command$(OBJEXT): Mod_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Mod_Command.cpp
+Commands/Modulus/Mod_Command$(OBJEXT): Commands/Modulus/Mod_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Modulus/Mod_Command.cpp
 
-Open_Paren_Command$(OBJEXT): Open_Paren_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Open_Paren_Command.cpp
+Commands/Open_Parenthesis/Open_Paren_Command$(OBJEXT): Commands/Open_Parenthesis/Open_Paren_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Open_Parenthesis/Open_Paren_Command.cpp
 
-Close_Paren_Command$(OBJEXT): Close_Paren_Command.cpp
-	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Close_Paren_Command.cpp
+Commands/Close_Parenthesis/Close_Paren_Command$(OBJEXT): Commands/Close_Parenthesis/Close_Paren_Command.cpp
+	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Commands/Close_Parenthesis/Close_Paren_Command.cpp
 
 Stack_Expr_Command_Factory$(OBJEXT): Stack_Expr_Command_Factory.cpp
 	$(COMPILE.cc) $(EXPORTFLAGS) $(OUTPUT_OPTION) Stack_Expr_Command_Factory.cpp

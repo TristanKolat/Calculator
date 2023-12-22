@@ -8,8 +8,8 @@
 #ifndef _EXPR_COMMAND_H_
 #define _EXPR_COMMAND_H_
 
-#include "Stack/Stack.h"
-#include "Array/Array.h"
+#include "../../Stack/Stack.h"
+#include "../../Array/Array.h"
 
 class Expr_Command {
     public:

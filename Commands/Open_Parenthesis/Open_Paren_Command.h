@@ -1,7 +1,7 @@
 #ifndef _OPEN_PAREN_COMMAND_H_
 #define _OPEN_PAREN_COMMAND_H_
 
-#include "Expr_Command.h"
+#include "../Interface/Expr_Command.h"
 
 // Open_Parenthesis_Command class extends Expr_Command to handle open parenthesis '('
 // in an arithmetic expression. This class specifically manages the operator stack

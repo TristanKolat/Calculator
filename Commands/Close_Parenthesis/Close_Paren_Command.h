@@ -1,7 +1,7 @@
 #ifndef _CLOSE_PAREN_COMMAND_H_
 #define _CLOSE_PAREN_COMMAND_H_
 
-#include "Expr_Command.h"
+#include "../Interface/Expr_Command.h"
 
 // Close_Parenthesis_Command class extends Expr_Command to handle close parenthesis ')'
 // in an arithmetic expression. This class specifically manages the operator stack
