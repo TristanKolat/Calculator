@@ -1,0 +1,58 @@
+// $Id: calculator.mpc
+
+project (calculator) {
+  exename = calculator
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+    driver.cpp
+    Add_Command.cpp
+    Div_Command.cpp
+    Mult_Command.cpp
+    Num_Command.cpp
+    Sub_Command.cpp
+    Mod_Command.cpp
+    Open_Paren_Command.cpp
+    Close_Paren_Command.cpp
+    Stack_Expr_Command_Factory.cpp      
+  }
+
+  Template_Files {
+    Array_Base.cpp
+    Array.cpp
+    Stack.cpp
+    Infix_To_Postfix.cpp 
+  }
+
+  Header_Files {
+    Array_Base.h
+    Array_Base.inl
+    Array.h
+
+    Stack.h
+    Stack.inl
+
+    Exp_Iterator.h
+    Array_Iterator.h
+    Array_Iterator.inl
+
+    Infix_To_Postfix.h
+    
+    Expr_Command_Factory.h
+    Stack_Expr_Command_Factory.h
+    Expr_Command.h
+    Add_Command.h
+    Div_Command.h
+    Mult_Command.h
+    Num_Command.h
+    Sub_Command.h
+    Mod_Command.h
+    Open_Paren_Command.h
+    Close_Paren_Command.h
+  }
+}
+
